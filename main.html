@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecrommmec</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+</head>
+<body>
+    <header>
+        <div class="container top-nav">
+        <a href="#" class="logo"><img src="img/logo-black.png" alt=""></a>
+        <form action="" class="search">
+            <input type="search" placeholder="search for prodacts ...">
+            <button type="submit">Search</button>
+        </form>
+        <div class="cart_header">
+          <div onclick="open_cart()" class="icon_cart">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span class="count_itms">0</span>
+          </div>
+          <div class="tottal_price">
+           <p>My Cart</p>
+           <p class="price_cart_head">$0</p>
+          </div>
+        </div>
+        </div>
+        <!-- start nav -->
+         <nav>
+          <div class="links container">
+           <ul>
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="">Ail product</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact</a></li>
+
+           </ul>
+           <div class="login-signup">
+            <a href="#">login <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            </a>
+            <a href="#">Sgin up <i class="fa-solid fa-user-plus"></i>
+            </a>
+
+           </div>
+          </div>
+         </nav>
+        <!-- end nae -->
+    </header>
+    <!-- START CARDES -->
+     <div class="cart">
+        <div class="top_cart">
+           <h3>My Cart <span>(0Item in Cart)</span></h3>
+           <span onclick="close_cart()" class="close-cart"><i class="fa-solid fa-circle-xmark"></i></span>
+        </div>
+        <div class="items_in_cart">
+          <div class="item-cart">
+              <img src="img/product/product-1.jpg">
+              <div class="content">
+                <h4>Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Aperiam</h4>
+                <p class="price-cart">2000$</p>
+                <button class="delete-item"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
+          </div>
+          <div class="item-cart">
+            <img src="img/product/product-2.jpg">
+            <div class="content">
+              <h4>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Aperiam</h4>
+              <p class="price-cart">2000$</p>
+              <button class="delete-item"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+        </div>
+        </div>
+        <div class="bottom_cart">
+          <div class="total">
+               <p>cart subtootl</p>
+               <p class="price_cart_total"></p>
+          </div>
+          <div class="button_cart">
+           <a href="#" class="btn_cart">Proceed to checkout</a>
+           <button class="btn_cart trans_bg">shop more</button>
+          </div>
+        </div>
+     </div>
+    <!-- END CARDES -->
+
+    <!-- start slader -->
+     <section class="slider">
+        <div class="container">
+          <div class="side-bar">
+            <h2><i class="fa-solid fa-bars"></i>Shop by derpament </h2>
+            <a href="#">All categores</a>
+            <a href="#"> Best Seller Prodact</a>
+            <a href="#"> New Arrivels</a>
+            <a href="#">Top 10 Offers</a>
+            <a href="#">phone & Tablet</a>
+            <a href="#">Tv & Audio</a>
+            <a href="#">Fashion & clothingo</a>
+            <a href="#">Electrnics & Digits</a>
+            <a href="#">showse</a>
+
+          </div>
+           <!-- Swiper -->
+  <div class="slade-swp mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#"><img src="img/slider-01.jpg" alt=""></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#"><img src="img/slider-02.jpg" alt=""></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#"><img src="img/slider-03.jpg" alt=""></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#"><img src="img/b17.jpg" alt=""></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#"><img src="img/b18.jpg" alt=""></a>
+      </div>
+     
+      
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+        </div>
+     </section>
+     <!-- end slader -->
+
+    <script src="main.js"></script>
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
+</html>
